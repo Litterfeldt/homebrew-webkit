@@ -22,7 +22,8 @@ class Webkitgtk < Formula
   depends_on 'gtk-doc'
   depends_on 'icu4c'
   depends_on 'pango'
-  depends_on 'gail'
+  depends_on 'gtk+'
+  depends_on 'enchant'
 
   fails_with :clang do
     build 421
