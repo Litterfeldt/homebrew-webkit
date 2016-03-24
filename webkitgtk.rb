@@ -25,7 +25,7 @@ class Webkitgtk < Formula
   depends_on 'gtk+'
   depends_on 'enchant'
   depends_on 'geoclue'
-  depends_on 'gst-plugins-base'
+  depends_on 'homebrew/versions/gst-plugins-base010'
 
   fails_with :clang do
     build 421
