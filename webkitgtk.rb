@@ -21,6 +21,7 @@ class Webkitgtk < Formula
   depends_on 'gst-plugins-base'
   depends_on 'gtk-doc'
   depends_on 'icu4c'
+  depends_on 'pango'
 
   fails_with :clang do
     build 421
@@ -37,8 +38,7 @@ class Webkitgtk < Formula
     system "./configure", "--disable-debug",
                           "--disable-jit", # https://bugs.webkit.org/show_bug.cgi?id=99732
                           "--with-gtk=2.0", "--disable-webkit2",
-                          "--prefix=#{prefix}",
-                          "-I/usr/local/Cellar/pango/1.38.1/include/pango-1.0"
+                          "--prefix=#{prefix}"
     system " make install V=1"
   end
 
