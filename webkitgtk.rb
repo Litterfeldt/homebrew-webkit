@@ -24,6 +24,7 @@ class Webkitgtk < Formula
   depends_on 'pango'
   depends_on 'gtk+'
   depends_on 'enchant'
+  depends_on 'geoclue'
 
   fails_with :clang do
     build 421
