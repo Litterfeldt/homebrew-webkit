@@ -2,7 +2,7 @@ require 'formula'
 
 # Adapted from https://trac.macports.org/browser/trunk/dports/www/webkit-gtk
 # Tested with newer glib and libsoup than currently in homebrew (also in tap).
-class Webkitgtk < Formula
+class Luakit < Formula
   homepage 'https://mason-larobina.github.io/luakit/'
   url 'https://github.com/mason-larobina/luakit/tarball/master'
   sha1 '97821c2435528071655d5d0f585aab180b4cb18b'
