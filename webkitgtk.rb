@@ -25,6 +25,7 @@ class Webkitgtk < Formula
   depends_on 'gtk+'
   depends_on 'enchant'
   depends_on 'geoclue'
+  depends_on 'gstreamer010'
 
   fails_with :clang do
     build 421
