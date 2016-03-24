@@ -38,7 +38,7 @@ class Webkitgtk < Formula
                           "--disable-jit", # https://bugs.webkit.org/show_bug.cgi?id=99732
                           "--with-gtk=2.0", "--disable-webkit2",
                           "--prefix=#{prefix}"
-    system "make install V=1"
+    system "CFLAGS=-I/usr/local/Cellar/pango/1.38.1/include/pango-1.0  make install V=1"
   end
 
   def patches
